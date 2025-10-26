@@ -1,3 +1,6 @@
+# Task: Detect the node where the cycle begins in a linked list.
+# Idea: Use two pointers: fast and slow. Once they meet, move one pointer to the head and move both one step at a time until they meet again.
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):

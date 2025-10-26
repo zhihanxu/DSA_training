@@ -29,5 +29,5 @@ if __name__ == "__main__":
     head.next.next.next.next = ListNode(5)
 
     k = 2
-    kth_node = FindFromEnd(head, k)
+    kth_node = findFromEnd(head, k)
     print(f"The {k}-th node from the end has the value: {kth_node.val}")  # Output: 4
