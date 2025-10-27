@@ -7,7 +7,7 @@ class Solution:
         if len(nums) == 0:
             return 0
         fast = slow = 0
-        for _ in range(len(nums)):
+        while fast < len(nums):
             if nums[fast] != nums[slow]:
                 slow += 1
                 nums[slow] = nums[fast]
