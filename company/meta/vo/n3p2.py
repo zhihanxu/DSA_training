@@ -1,0 +1,1 @@
+# 第二题 给一个数字N，建立一个N*N的grid，问从左上到右下的所有path，follow up是如果这个grid有block怎么修改代码

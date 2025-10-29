@@ -1,5 +1,3 @@
-# 
-
 from queue import PriorityQueue
 from typing import List
 

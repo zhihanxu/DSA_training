@@ -1,3 +1,7 @@
+# Tips: 
+    # if target not found, left bound is the smallest index x such that f(x) > target
+    # right bound is the largest index x such that f(x) < target
+
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         l = self.left_bound(nums, target)

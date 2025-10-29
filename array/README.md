@@ -1,31 +1,8 @@
 # Array Problems
 
-只要数组有序，就应该想到双指针技巧
+只要数组有序，就应该想到双指针技巧  
 
-```cpp
-// 滑动窗口算法框架伪码
-int left = 0, right = 0;
-while (right < nums.size()) {
-    // 增大窗口
-    window.addLast(nums[right]);
-    right++;
-    while (window needs shrink) {
-        // 缩小窗口
-        window.removeFirst(nums[left]);
-        left++;
-    }
-}
-
-```python
-def binarySearch(nums: List[int], target: int) -> int:
-    # 一左一右两个指针相向而行
-    left, right = 0, len(nums) - 1
-    while left <= right:
-        mid = (right + left) // 2
-        if nums[mid] == target:
-            return mid
-        elif nums[mid] < target:
-            left = mid + 1
-        elif nums[mid] > target:
-            right = mid - 1
-    return -1
+差分数组的前缀和数组就是原数组  
+1. 想要使用差分数组技巧，必须创建一个长度和区间长度一样的差分数组 diff，那如果我有一个非常大的区间
+2. 前缀和技巧可以快速进行区间查询，差分数组可以快速进行区间增减。能不能把他俩结合起来，既可以快速进行区间增减，又可以随时进行区间查询？  
+其实这两个问题是处理区间问题的常见问题，终极答案是 线段树 这种数据结构，它可以在 O(logN) 的时间复杂度内完成任意长度的区间增减和区间查询操作。 
